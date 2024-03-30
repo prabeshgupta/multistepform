@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <ul class="progressBar">
+            <li class="active" id="account"><strong>Account</strong></li>
+            <li id="personal"><strong>Personal</strong></li>
+            <li id="social"><strong>Social</strong></li>
+            <li id="confirm"><strong>Finish</strong></li>
+        </ul>
+
+        <div class="form-group form-active">
+            <div class="row">
+                <h2 class="form-title">Account Information</h2>
+                <h3 class="form-step">Step 1 of 4</h3>
+            </div>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" />
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" />
+            </div>
+            <div class="form-control">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" />
+            </div>
+            <button class="next">Next</button>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <h2 class="form-title">Personal Information</h2>
+                <h3 class="form-step">Step 2 of 4</h3>
+            </div>
+            <div class="form-control">
+                <label for="fName">First Name</label>
+                <input type="text" id="fName" />
+            </div>
+            <div class="form-control">
+                <label for="lName">Last Names</label>
+                <input type="text" id="lName" />
+            </div>
+            <div class="form-control">
+                <label for="number">Number</label>
+                <input type="number" id="number" />
+            </div>
+            <div class="form-control">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" />
+            </div>
+            <div class="button-control">
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <h2 class="form-title">Social Information</h2>
+                <h3 class="form-step">Step 3 of 4</h3>
+            </div>
+            <div class="form-control">
+                <label for="linkedin">Linkedin</label>
+                <input type="url" id="linkedin" />
+            </div>
+            <div class="form-control">
+                <label for="facebook">Facebook</label>
+                <input type="url" id="facebook" />
+            </div>
+            <div class="form-control">
+                <label for="instagram">Instagram</label>
+                <input type="url" id="instagram" />
+            </div>
+            <div class="form-control">
+                <label for="x">Twitter</label>
+                <input type="url" id="x" />
+            </div>
+            <div class="button-control">
+                <button class="previous">Previous</button>
+                <button class="next">Submit</button>
+            </div>
+        </div>
+        <div class="form-group success">
+            <div class="row">
+                <h2 class="form-title">Finish</h2>
+                <h3 class="form-step">Step 4 of 4</h3>
+            </div>
+            <h2><strong>SUCCESS</strong></h2>
+            <h2>Thanks for Registration</h2>
+            <i class="fa fa-check-circle-o"></i>
+            <p>We will reach to you soon</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
